@@ -7,6 +7,13 @@ export default class Deck {
    * @author: Robert Rieser
    */
   constructor() {
+    resetDeck();
+  }
+
+  /**
+   * resets and shuffles the deck
+   */
+  resetDeck() {
     this.deck = this.initDeck();
     this.deck = this.shuffleDeck(this.deck);
   }
@@ -44,12 +51,13 @@ export default class Deck {
 
   /**
    * We are using the Fisher-Yates Shuffle algorithm, which gives as a non-biased shuffle
-   * 
+   *
    * @param _deck the deck
    * @return the shuffled deck
    */
   shuffleDeck(_deck) {
-    let m = _deck.length, i;
+    let m = _deck.length,
+      i;
 
     while (m) {
       i = Math.floor(Math.random() * m--);
@@ -59,7 +67,7 @@ export default class Deck {
   }
 
   /**
-   * Returns the deck
+   * Returns a card and removes it from the deck
    *
    * @return a card in form as an object
    */
@@ -69,7 +77,7 @@ export default class Deck {
   }
 
   /**
-   * Returns the deck
+   * Getter method of the deck
    *
    * @return the deck as an array of objects
    */
@@ -77,7 +85,12 @@ export default class Deck {
     return this.deck;
   }
 
-  set Deck(newDeck){
+  /**
+   * Setter method of the deck
+   *
+   * @param newdeck the new deck
+   */
+  set Deck(newDeck) {
     this.deck = newDeck;
   }
 }
