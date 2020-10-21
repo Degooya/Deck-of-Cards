@@ -26,6 +26,11 @@ export default {
 
 <style lang="scss">
 
+.card-dragged .card{
+  box-shadow: 0 10px 20px rgba(3, 23, 70, .09);
+	transition: box-shadow .4s, -webkit-box-shadow .4s;
+}
+
 .card {
   display: flex;
   flex-flow: column;
@@ -41,6 +46,7 @@ export default {
   overflow: hidden;
   padding: 2px;
   font-family: sans-serif;
+  transition: box-shadow .3s, -webkit-box-shadow .4s;
 
   &.♠,
   &.♣ {
@@ -57,6 +63,8 @@ export default {
     text-align: left;
   }
 }
+
+
 
 .card___wrapper {
   flex: 1 1 auto;
