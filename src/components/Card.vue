@@ -1,13 +1,13 @@
 <template>
   <div :class="`card ${suit}`">
-    <div class="card___container top">
+    <div class="card___wrapper top">
       <div class="card___content---small value">{{ value }}</div>
       <div class="card___content---small suit">{{ suit }}</div>
     </div>
-    <div class="card___container center">
+    <div class="card___wrapper center">
       <div class="card___value">{{ suit }}</div>
     </div>
-    <div class="card___container bottom">
+    <div class="card___wrapper bottom">
       <div class="card___content---small value-rotated value">{{ value }}</div>
       <div class="card___content---small value-rotated suit">{{ suit }}</div>
     </div>
@@ -24,7 +24,8 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
+
 .card {
   display: flex;
   flex-flow: column;
@@ -37,10 +38,9 @@ export default {
   left: 0;
   border: 2px solid #ececec;
   box-sizing: border-box;
-  cursor:grab;
   overflow: hidden;
   padding: 2px;
-  font-weight: bold;
+  font-family: sans-serif;
 
   &.♠,
   &.♣ {
@@ -58,7 +58,7 @@ export default {
   }
 }
 
-.card___container {
+.card___wrapper {
   flex: 1 1 auto;
   display: flex;
   flex-direction: column;
@@ -77,11 +77,14 @@ export default {
     &.value {
       font-size: 11.5px;
       line-height: 10px;
+      padding-left: 2px ;
     }
 
     &.suit {
       line-height: 14px;
+      font-size: 12px;
     }
   }
 }
+
 </style>

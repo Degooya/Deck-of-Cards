@@ -1,5 +1,6 @@
 {
-  "name": "deck-of-cards",
+  "name": "Deck of Cards",
+  "description": "a deck-of-cards Javascript class, which comes with a Vue.js user interface",
   "version": "0.1.0",
   "private": true,
   "scripts": {
