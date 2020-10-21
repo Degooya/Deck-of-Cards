@@ -19,7 +19,7 @@ export default class Deck {
 
     const suits = ["♣", "♦", "♥", "♠"];
     const values = [
-      "Ace",
+      "A",
       "2",
       "3",
       "4",
@@ -29,9 +29,9 @@ export default class Deck {
       "8",
       "9",
       "10",
-      "Jack",
-      "Queen",
-      "King",
+      "J",
+      "Q",
+      "K",
     ];
 
     for (let suit of suits) {
@@ -73,7 +73,11 @@ export default class Deck {
    *
    * @return the deck as an array of objects
    */
-  getDeck() {
+  get Deck() {
     return this.deck;
+  }
+
+  set Deck(newDeck){
+    this.deck = newDeck;
   }
 }
