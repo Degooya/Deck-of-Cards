@@ -3,19 +3,18 @@ a deck-of-cards javascript class, which comes with a Vue.js UI
 
 ![Deck of Cards](./.github/DeckofCards.png)
 
-## Project setup
+### Project setup
 ```
 npm install
 npm run serve
 ```
+### To-Do List
 
-## What's coming?
-
-* toggle back and front of card.
-* add buttons for shuffle and reset deck.
+* Toggle back and front of card.
+* Add buttons to shuffle and reset deck.
 * Performance optimization.
-* Testing.
+* Implement testing.
 
-## Copyright and license
+### Copyright and license
 
-Code and documentation copyright 2020 the author. Code released under the [MIT license](LICENSE). Docs released under [Creative Commons](docs/LICENSE).
+Code and documentation copyright 2020 the author. Code released under the [MIT license](LICENSE). Docs released under [Creative Commons](docs/LICENSE).</pre>
