@@ -6,11 +6,6 @@ a deck-of-cards javascript class, which comes with a Vue.js UI
 ## Project setup
 ```
 npm install
-```
-
-### Build instructions
-```
-npm install
 npm run serve
 ```
 
