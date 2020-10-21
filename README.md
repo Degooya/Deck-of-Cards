@@ -15,6 +15,6 @@ npm run serve
 * Performance optimization.
 * Implement testing.
 
-### Copyright and license
+## Copyright and license
 
 Code and documentation copyright 2020 the author. Code released under the [MIT license](LICENSE). Docs released under [Creative Commons](docs/LICENSE).</pre>
