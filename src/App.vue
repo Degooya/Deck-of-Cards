@@ -7,6 +7,12 @@
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import Deck from './library/Deck.js';
+
+let deck = new Deck;
+
+console.log(deck.getDeck());
+
 
 export default {
   name: 'App',
@@ -16,7 +22,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
