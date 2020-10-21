@@ -7,7 +7,7 @@ export default class Deck {
    * @author: Robert Rieser
    */
   constructor() {
-    resetDeck();
+    this.resetDeck();
   }
 
   /**
